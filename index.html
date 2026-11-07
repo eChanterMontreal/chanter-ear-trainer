@@ -12,31 +12,31 @@
 </head>
 <body>
   <main class="app-shell">
-    <header class="topbar"><div class="brand-mark">♪</div><div><p class="eyebrow">BAGPIPE EAR TRAINER</p><h1>Chanter Ear Trainer</h1></div><button id="installBtn" class="install-btn" hidden>Instalar</button></header>
+  <header class="topbar"><div class="brand-mark">♪</div><div><p class="eyebrow" data-i18n="brandEyebrow">BAGPIPE EAR TRAINER</p><h1 data-i18n="brandTitle">Chanter Ear Trainer</h1></div><select id="languageSelect" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option></select><button id="installBtn" class="install-btn" hidden data-i18n="install">Install</button></header>
     <section class="hero card">
-      <p class="eyebrow">ENTRENAMIENTO AUDITIVO</p><h2>¿Sharp o flat?</h2>
-      <p>Compara cada tono con la referencia de <strong>480 Hz</strong>.</p>
+      <p class="eyebrow" data-i18n="introEyebrow">EAR TRAINING</p><h2 data-i18n="introTitle">Sharp or flat?</h2>
+      <p><span data-i18n="introText">Compare each tone with the</span> <strong>480 Hz</strong> <span data-i18n="referenceWord">reference.</span></p>
       <div class="mode-tabs" role="tablist" aria-label="Modo de práctica">
-        <button class="mode-tab active" data-mode="training" role="tab" aria-selected="true">Entrenamiento</button>
-        <button class="mode-tab" data-mode="test" role="tab" aria-selected="false">Prueba · 10 tonos</button>
+        <button class="mode-tab active" data-mode="training" role="tab" aria-selected="true" data-i18n="trainingMode">Training</button>
+        <button class="mode-tab" data-mode="test" role="tab" aria-selected="false" data-i18n="testMode">Test · 10 tones</button>
       </div>
     </section>
     <section class="card reference-card">
-      <div><p class="eyebrow">TONO DE REFERENCIA</p><div class="reference-frequency">480 <small>Hz</small></div><p class="muted">Timbre armónico tipo chanter</p></div>
-      <button id="referenceBtn" class="button button-light"><span>▶</span> Escuchar referencia</button>
+      <div><p class="eyebrow" data-i18n="referenceTone">REFERENCE TONE</p><div class="reference-frequency">480 <small>Hz</small></div><p class="muted" data-i18n="referenceDescription">Harmonic chanter-like tone</p></div>
+      <button id="referenceBtn" class="button button-light"><span>▶</span> <span data-i18n="listenReference">Listen to reference</span></button>
     </section>
     <section class="card exercise-card">
-      <div class="section-heading"><div><p class="eyebrow" id="roundEyebrow">MODO ENTRENAMIENTO</p><h2 id="exerciseTitle">Prepara tu oído</h2></div><div class="round-badge" id="roundBadge">—</div></div>
-      <label class="level-label" for="levelSelect">Dificultad</label>
-      <select id="levelSelect"><option>Principiante</option><option>Intermedio</option><option>Avanzado</option><option>Experto</option></select>
-      <div class="actions"><button id="newBtn" class="button button-primary">▶ Nueva prueba</button><button id="playBtn" class="button button-secondary" disabled>▶ Escuchar tono</button></div>
-      <p id="prompt" class="prompt" aria-live="polite">Pulsa «Nueva prueba» para comenzar.</p>
+      <div class="section-heading"><div><p class="eyebrow" id="roundEyebrow">TRAINING MODE</p><h2 id="exerciseTitle">Ready to train?</h2></div><div class="round-badge" id="roundBadge">—</div></div>
+      <label class="level-label" for="levelSelect" data-i18n="difficulty">Difficulty</label>
+      <select id="levelSelect"><option value="beginner" data-i18n="beginner">Beginner</option><option value="intermediate" data-i18n="intermediate">Intermediate</option><option value="advanced" data-i18n="advanced">Advanced</option><option value="expert" data-i18n="expert">Expert</option></select>
+      <div class="actions"><button id="newBtn" class="button button-primary">▶ <span data-i18n="newTest">New exercise</span></button><button id="playBtn" class="button button-secondary" disabled>▶ <span data-i18n="listenTone">Listen to tone</span></button></div>
+      <p id="prompt" class="prompt" aria-live="polite">Press “New exercise” to begin.</p>
       <p id="feedback" class="feedback" aria-live="polite"></p>
-      <div class="answers"><button class="answer sharp" data-answer="SHARP" disabled><span>↑</span><strong>SHARP</strong><small>Más agudo</small></button><button class="answer flat" data-answer="FLAT" disabled><span>↓</span><strong>FLAT</strong><small>Más grave</small></button></div>
-      <button id="nextBtn" class="button button-primary next-btn" hidden>Siguiente tono →</button>
+      <div class="answers"><button class="answer sharp" data-answer="SHARP" disabled><span>↑</span><strong data-i18n="sharp">SHARP</strong><small data-i18n="higher">Higher</small></button><button class="answer flat" data-answer="FLAT" disabled><span>↓</span><strong data-i18n="flat">FLAT</strong><small data-i18n="lower">Lower</small></button></div>
+      <button id="nextBtn" class="button button-primary next-btn" hidden data-i18n="nextTone">Next tone →</button>
     </section>
-    <section class="card stats-card"><div class="section-heading"><div><p class="eyebrow">TU PROGRESO</p><h2>Estadísticas</h2></div><button id="resetBtn" class="text-button">Reiniciar</button></div><div class="stats-grid"><div><strong id="totalStat">0</strong><span>Pruebas</span></div><div><strong id="correctStat">0</strong><span>Correctas</span></div><div><strong id="accuracyStat">0%</strong><span>Precisión</span></div><div><strong id="streakStat">0</strong><span>Mejor racha</span></div></div><p id="sessionStat" class="muted">Resultados guardados en este dispositivo.</p></section>
-    <footer>El audio funciona por el altavoz o los auriculares conectados al dispositivo.</footer>
+    <section class="card stats-card"><div class="section-heading"><div><p class="eyebrow" data-i18n="yourProgress">YOUR PROGRESS</p><h2 data-i18n="statistics">Statistics</h2></div><button id="resetBtn" class="text-button" data-i18n="reset">Reset</button></div><div class="stats-grid"><div><strong id="totalStat">0</strong><span data-i18n="tests">Tests</span></div><div><strong id="correctStat">0</strong><span data-i18n="correct">Correct</span></div><div><strong id="accuracyStat">0%</strong><span data-i18n="accuracy">Accuracy</span></div><div><strong id="streakStat">0</strong><span data-i18n="bestStreak">Best streak</span></div></div><p id="sessionStat" class="muted">Statistics are saved on this device.</p></section>
+    <footer data-i18n="audioNote">Audio plays through the device speaker or connected headphones.</footer>
   </main>
   <script src="app.js" defer></script>
 </body>

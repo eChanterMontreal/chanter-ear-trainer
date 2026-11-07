@@ -7,7 +7,8 @@ La aplicación conserva la lógica del Python original:
 - Repetición del tono y explicación de la respuesta en Entrenamiento.
 - Prueba de 10 tonos y puntuación final.
 - Estadísticas guardadas en el navegador de cada dispositivo.
+- Selector de idioma: English, Français y Español.
 
 Para instalarla como PWA en Chrome/Android, los archivos deben estar en una dirección HTTPS. Al instalarla, el service worker guarda los archivos de la aplicación para usarla sin conexión. La función de audio genera el tono en el propio dispositivo y utiliza la salida de audio que tenga seleccionada (altavoz o auriculares).
 
-La carpeta contiene también codigo_original.py como referencia. Las estadísticas se guardan por separado en cada dispositivo y no se sincronizan entre Windows y el teléfono.
+La carpeta contiene también codigo_original.py como referencia. Ese archivo no se publica en GitHub. Las estadísticas se guardan por separado en cada dispositivo y no se sincronizan entre Windows y el teléfono. Puedes compartir el enlace de la app; cada persona tendrá sus propias estadísticas locales.
