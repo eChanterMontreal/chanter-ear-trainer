@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10251f">
+  <meta name="description" content="Entrenador auditivo de chanter: distingue tonos sharp y flat.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Chanter Ear Trainer</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar"><div class="brand-mark">♪</div><div><p class="eyebrow">BAGPIPE EAR TRAINER</p><h1>Chanter Ear Trainer</h1></div><button id="installBtn" class="install-btn" hidden>Instalar</button></header>
+    <section class="hero card">
+      <p class="eyebrow">ENTRENAMIENTO AUDITIVO</p><h2>¿Sharp o flat?</h2>
+      <p>Compara cada tono con la referencia de <strong>480 Hz</strong>.</p>
+      <div class="mode-tabs" role="tablist" aria-label="Modo de práctica">
+        <button class="mode-tab active" data-mode="training" role="tab" aria-selected="true">Entrenamiento</button>
+        <button class="mode-tab" data-mode="test" role="tab" aria-selected="false">Prueba · 10 tonos</button>
+      </div>
+    </section>
+    <section class="card reference-card">
+      <div><p class="eyebrow">TONO DE REFERENCIA</p><div class="reference-frequency">480 <small>Hz</small></div><p class="muted">Timbre armónico tipo chanter</p></div>
+      <button id="referenceBtn" class="button button-light"><span>▶</span> Escuchar referencia</button>
+    </section>
+    <section class="card exercise-card">
+      <div class="section-heading"><div><p class="eyebrow" id="roundEyebrow">MODO ENTRENAMIENTO</p><h2 id="exerciseTitle">Prepara tu oído</h2></div><div class="round-badge" id="roundBadge">—</div></div>
+      <label class="level-label" for="levelSelect">Dificultad</label>
+      <select id="levelSelect"><option>Principiante</option><option>Intermedio</option><option>Avanzado</option><option>Experto</option></select>
+      <div class="actions"><button id="newBtn" class="button button-primary">▶ Nueva prueba</button><button id="playBtn" class="button button-secondary" disabled>▶ Escuchar tono</button></div>
+      <p id="prompt" class="prompt" aria-live="polite">Pulsa «Nueva prueba» para comenzar.</p>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <div class="answers"><button class="answer sharp" data-answer="SHARP" disabled><span>↑</span><strong>SHARP</strong><small>Más agudo</small></button><button class="answer flat" data-answer="FLAT" disabled><span>↓</span><strong>FLAT</strong><small>Más grave</small></button></div>
+      <button id="nextBtn" class="button button-primary next-btn" hidden>Siguiente tono →</button>
+    </section>
+    <section class="card stats-card"><div class="section-heading"><div><p class="eyebrow">TU PROGRESO</p><h2>Estadísticas</h2></div><button id="resetBtn" class="text-button">Reiniciar</button></div><div class="stats-grid"><div><strong id="totalStat">0</strong><span>Pruebas</span></div><div><strong id="correctStat">0</strong><span>Correctas</span></div><div><strong id="accuracyStat">0%</strong><span>Precisión</span></div><div><strong id="streakStat">0</strong><span>Mejor racha</span></div></div><p id="sessionStat" class="muted">Resultados guardados en este dispositivo.</p></section>
+    <footer>El audio funciona por el altavoz o los auriculares conectados al dispositivo.</footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

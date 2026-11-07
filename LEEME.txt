@@ -1,0 +1,13 @@
+CHANTER EAR TRAINER
+
+La aplicación conserva la lógica del Python original:
+- Referencia de 480 Hz.
+- Fundamental y armónicos 2× a 6×, ataque y final suaves, nivel normalizado.
+- Sharp/Flat aleatorio con los mismos rangos de cents por dificultad.
+- Repetición del tono y explicación de la respuesta en Entrenamiento.
+- Prueba de 10 tonos y puntuación final.
+- Estadísticas guardadas en el navegador de cada dispositivo.
+
+Para instalarla como PWA en Chrome/Android, los archivos deben estar en una dirección HTTPS. Al instalarla, el service worker guarda los archivos de la aplicación para usarla sin conexión. La función de audio genera el tono en el propio dispositivo y utiliza la salida de audio que tenga seleccionada (altavoz o auriculares).
+
+La carpeta contiene también codigo_original.py como referencia. Las estadísticas se guardan por separado en cada dispositivo y no se sincronizan entre Windows y el teléfono.
