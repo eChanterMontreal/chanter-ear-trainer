@@ -7,7 +7,7 @@
   <meta name="description" content="Highland bagpipe ear training with an adjustable Low A reference.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <title>Chanter Ear Trainer</title>
 </head>
 <body>
@@ -29,12 +29,17 @@
       <div><p class="eyebrow" data-i18n="tuningSetup">TUNING SETUP</p><label class="level-label" for="lowAInput" data-i18n="lowAFrequency">Low A frequency</label><p class="muted" data-i18n="scaleNote">The other note references are calculated automatically from this value.</p></div>
       <div class="frequency-input"><input id="lowAInput" type="number" min="400" max="520" step="0.1" value="480" inputmode="decimal" aria-label="Low A frequency"><span>Hz</span></div>
     </section>
+    <section class="card scale-card">
+      <div><p class="eyebrow" data-i18n="scaleListening">SCALE LISTENING</p><p class="muted" data-i18n="scaleListeningDescription">Hear all nine notes in order, 3.5 seconds each.</p></div>
+      <button id="scaleListenBtn" class="button button-primary"><span data-i18n="listenScale">▶ Listen to full scale</span></button>
+      <p id="scaleStatus" class="muted scale-status" aria-live="polite"></p>
+    </section>
     <section class="card exercise-card">
       <div class="section-heading"><div><p class="eyebrow" id="roundEyebrow">TRAINING MODE</p><h2 id="exerciseTitle">Ready to train?</h2></div><div class="round-badge" id="roundBadge">—</div></div>
       <label class="level-label" for="levelSelect" data-i18n="difficulty">Difficulty</label>
       <select id="levelSelect"><option value="beginner" data-i18n="beginner">Beginner</option><option value="intermediate" data-i18n="intermediate">Intermediate</option><option value="advanced" data-i18n="advanced">Advanced</option><option value="expert" data-i18n="expert">Expert</option></select>
       <label class="level-label" for="noteSelect" data-i18n="exerciseNote">Exercise note</label>
-      <select id="noteSelect"><option value="lowG" data-i18n="noteLowG">Low G</option><option value="lowA" data-i18n="noteLowA">Low A</option><option value="B" data-i18n="noteB">B</option><option value="C" data-i18n="noteC">C (chanter C♯)</option><option value="D" data-i18n="noteD">D</option><option value="E" data-i18n="noteE">E</option><option value="F" data-i18n="noteF">F (chanter F♯)</option><option value="highG" data-i18n="noteHighG">High G</option><option value="highA" data-i18n="noteHighA">High A</option></select>
+      <select id="noteSelect"><option value="lowG" data-i18n="noteLowG">Low G</option><option value="lowA" selected data-i18n="noteLowA">Low A</option><option value="B" data-i18n="noteB">B</option><option value="C" data-i18n="noteC">C (chanter C♯)</option><option value="D" data-i18n="noteD">D</option><option value="E" data-i18n="noteE">E</option><option value="F" data-i18n="noteF">F (chanter F♯)</option><option value="highG" data-i18n="noteHighG">High G</option><option value="highA" data-i18n="noteHighA">High A</option></select>
       <div id="testScopeWrap" hidden><label class="level-label" for="testScope" data-i18n="testCoverage">Test coverage</label><select id="testScope"><option value="single" data-i18n="selectedNoteOnly">Selected note · 10 tones</option><option value="scale" data-i18n="allNotesOnce">All 9 notes · once each</option></select></div>
       <div class="actions"><button id="newBtn" class="button button-primary">▶ <span data-i18n="newTest">New exercise</span></button><button id="playBtn" class="button button-secondary" disabled>▶ <span data-i18n="listenTone">Listen to tone</span></button></div>
       <p id="prompt" class="prompt" aria-live="polite">Press “New exercise” to begin.</p>
@@ -45,6 +50,6 @@
     <section class="card stats-card"><div class="section-heading"><div><p class="eyebrow" data-i18n="yourProgress">YOUR PROGRESS</p><h2 data-i18n="statistics">Statistics</h2></div><button id="resetBtn" class="text-button" data-i18n="reset">Reset</button></div><div class="stats-grid"><div><strong id="totalStat">0</strong><span data-i18n="tests">Tests</span></div><div><strong id="correctStat">0</strong><span data-i18n="correct">Correct</span></div><div><strong id="accuracyStat">0%</strong><span data-i18n="accuracy">Accuracy</span></div><div><strong id="streakStat">0</strong><span data-i18n="bestStreak">Best streak</span></div></div><p id="sessionStat" class="muted">Statistics are saved on this device.</p></section>
     <footer data-i18n="audioNote">Audio plays through the device speaker or connected headphones.</footer>
   </main>
-  <script src="app.js?v=3" defer></script>
+  <script src="app.js?v=4" defer></script>
 </body>
 </html>

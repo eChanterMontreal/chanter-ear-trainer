@@ -10,7 +10,7 @@
   const TEXT = {
     en: {
       brandEyebrow:'BAGPIPE EAR TRAINER',brandTitle:'Chanter Ear Trainer',install:'Install',introEyebrow:'EAR TRAINING',introTitle:'Sharp or flat?',introText:'Set Low A and choose a chanter note. The scale references follow your Low A setting.',
-      trainingMode:'Training',testMode:'Test · 10 tones',referenceTone:'NOTE REFERENCE',referenceDescription:'Highland harmonic scale',listenReference:'Listen to selected note',tuningSetup:'TUNING SETUP',lowAFrequency:'Low A frequency',scaleNote:'The other note references are calculated automatically from this value.',
+      trainingMode:'Training',testMode:'Test · 10 tones',referenceTone:'NOTE REFERENCE',referenceDescription:'Highland harmonic scale',listenReference:'Listen to selected note',tuningSetup:'TUNING SETUP',lowAFrequency:'Low A frequency',scaleNote:'The other note references are calculated automatically from this value.',scaleListening:'SCALE LISTENING',scaleListeningDescription:'Hear all nine notes in order, 3.5 seconds each.',listenScale:'▶ Listen to full scale',stopScale:'■ Stop scale',scaleNowPlaying:'Playing {note} · {number} of 9',scaleFinished:'Scale finished.',
       exerciseNote:'Exercise note',testCoverage:'Test coverage',selectedNoteOnly:'Selected note · 10 tones',allNotesOnce:'All 9 notes · once each',
       noteLowG:'Low G',noteLowA:'Low A',noteB:'B',noteC:'C (chanter C♯)',noteD:'D',noteE:'E',noteF:'F (chanter F♯)',noteHighG:'High G',noteHighA:'High A',
       modeTraining:'TRAINING MODE',modeTest:'TEST MODE',modeTestNoHints:'TEST MODE',readyTitle:'Ready to train?',testReadyTitle:'Ready for a test?',testTitle:'Tone challenge',preparedTitle:'Tone ready',difficulty:'Difficulty',beginner:'Beginner',intermediate:'Intermediate',advanced:'Advanced',expert:'Expert',newTest:'New exercise',startTest:'Start test',startAnotherTest:'Start another test',listenTone:'Listen to tone',
@@ -19,7 +19,7 @@
     },
     fr: {
       brandEyebrow:'ENTRAÎNEMENT DE CORNEMUSE',brandTitle:'Chanter Ear Trainer',install:'Installer',introEyebrow:'ENTRAÎNEMENT DE L’OREILLE',introTitle:'Sharp ou flat ?',introText:'Réglez le Low A et choisissez une note du chanter. Les références suivent ce réglage.',
-      trainingMode:'Entraînement',testMode:'Test · 10 sons',referenceTone:'RÉFÉRENCE DE NOTE',referenceDescription:'Échelle Highland harmonique/juste',listenReference:'Écouter la note choisie',tuningSetup:'RÉGLAGE DE L’ACCORD',lowAFrequency:'Fréquence du Low A',scaleNote:'Les références des autres notes sont calculées automatiquement à partir de cette valeur.',
+      trainingMode:'Entraînement',testMode:'Test · 10 sons',referenceTone:'RÉFÉRENCE DE NOTE',referenceDescription:'Échelle Highland harmonique/juste',listenReference:'Écouter la note choisie',tuningSetup:'RÉGLAGE DE L’ACCORD',lowAFrequency:'Fréquence du Low A',scaleNote:'Les références des autres notes sont calculées automatiquement à partir de cette valeur.',scaleListening:'ÉCOUTER LA GAMME',scaleListeningDescription:'Écoutez les neuf notes dans l’ordre, 3,5 secondes chacune.',listenScale:'▶ Écouter toute la gamme',stopScale:'■ Arrêter la gamme',scaleNowPlaying:'Lecture : {note} · {number} sur 9',scaleFinished:'Gamme terminée.',
       exerciseNote:'Note à travailler',testCoverage:'Contenu du test',selectedNoteOnly:'Note choisie · 10 sons',allNotesOnce:'Les 9 notes · une fois chacune',
       noteLowG:'Low G',noteLowA:'Low A',noteB:'B',noteC:'C (C♯ du chanter)',noteD:'D',noteE:'E',noteF:'F (F♯ du chanter)',noteHighG:'High G',noteHighA:'High A',
       modeTraining:'MODE ENTRAÎNEMENT',modeTest:'MODE TEST',modeTestNoHints:'MODE TEST',readyTitle:'Prêt à vous entraîner ?',testReadyTitle:'Prêt pour le test ?',testTitle:'Défi de note',preparedTitle:'Note prête',difficulty:'Difficulté',beginner:'Débutant',intermediate:'Intermédiaire',advanced:'Avancé',expert:'Expert',newTest:'Nouvel exercice',startTest:'Commencer le test',startAnotherTest:'Recommencer le test',listenTone:'Écouter le son',
@@ -28,7 +28,7 @@
     },
     es: {
       brandEyebrow:'ENTRENADOR DE GAITA',brandTitle:'Chanter Ear Trainer',install:'Instalar',introEyebrow:'ENTRENAMIENTO AUDITIVO',introTitle:'¿Sharp o flat?',introText:'Ajusta el Low A y elige una nota del chanter. Las referencias siguen ese ajuste.',
-      trainingMode:'Entrenamiento',testMode:'Prueba · 10 tonos',referenceTone:'REFERENCIA DE NOTA',referenceDescription:'Escala Highland armónica/justa',listenReference:'Escuchar nota elegida',tuningSetup:'AJUSTE DE AFINACIÓN',lowAFrequency:'Frecuencia de Low A',scaleNote:'Las referencias de las demás notas se calculan automáticamente a partir de este valor.',
+      trainingMode:'Entrenamiento',testMode:'Prueba · 10 tonos',referenceTone:'REFERENCIA DE NOTA',referenceDescription:'Escala Highland armónica/justa',listenReference:'Escuchar nota elegida',tuningSetup:'AJUSTE DE AFINACIÓN',lowAFrequency:'Frecuencia de Low A',scaleNote:'Las referencias de las demás notas se calculan automáticamente a partir de este valor.',scaleListening:'ESCUCHAR LA ESCALA',scaleListeningDescription:'Escucha las nueve notas en orden, 3,5 segundos cada una.',listenScale:'▶ Escuchar escala completa',stopScale:'■ Detener escala',scaleNowPlaying:'Reproduciendo {note} · {number} de 9',scaleFinished:'Escala terminada.',
       exerciseNote:'Nota del ejercicio',testCoverage:'Alcance de la prueba',selectedNoteOnly:'Nota elegida · 10 tonos',allNotesOnce:'Las 9 notas · una vez cada una',
       noteLowG:'Low G',noteLowA:'Low A',noteB:'B',noteC:'C (C♯ del chanter)',noteD:'D',noteE:'E',noteF:'F (F♯ del chanter)',noteHighG:'High G',noteHighA:'High A',
       modeTraining:'MODO ENTRENAMIENTO',modeTest:'MODO PRUEBA',modeTestNoHints:'MODO PRUEBA',readyTitle:'Prepara tu oído',testReadyTitle:'¿Listo para la prueba?',testTitle:'Reto de nota',preparedTitle:'Nota preparada',difficulty:'Dificultad',beginner:'Principiante',intermediate:'Intermedio',advanced:'Avanzado',expert:'Experto',newTest:'Nuevo ejercicio',startTest:'Empezar prueba',startAnotherTest:'Empezar otra prueba',listenTone:'Escuchar tono',
@@ -48,6 +48,8 @@
   let testNotes = [];
   let lastWasCorrect = false;
   let deferredInstall = null;
+  let scalePlaybackToken = 0;
+  let activeToneSource = null;
   let lang = localStorage.getItem('chanterLanguage') || 'en';
   let lowAFrequency = Number(localStorage.getItem('chanterLowA')) || 480;
   let stats = loadStats();
@@ -95,10 +97,11 @@
     if (audioCtx.state === 'suspended') audioCtx.resume();
     return audioCtx;
   }
-  function playTone(freq) {
+  function playTone(freq, duration = DURATION) {
     try {
+      if (activeToneSource) { try { activeToneSource.stop(); } catch {} }
       const ctx = audio();
-      const length = Math.floor(SAMPLE_RATE * DURATION);
+      const length = Math.floor(SAMPLE_RATE * duration);
       const buffer = ctx.createBuffer(1, length, SAMPLE_RATE);
       const data = buffer.getChannelData(0);
       let peak = 0;
@@ -114,8 +117,38 @@
       const source = ctx.createBufferSource();
       source.buffer = buffer;
       source.connect(ctx.destination);
+      activeToneSource = source;
+      source.onended = () => { if (activeToneSource === source) activeToneSource = null; };
       source.start();
     } catch (error) { $('prompt').textContent = `Audio error: ${error.message}`; }
+  }
+  const SCALE_ORDER = ['lowG','lowA','B','C','D','E','F','highG','highA'];
+  function setScaleButton(playing) {
+    $('scaleListenBtn').querySelector('[data-i18n]').textContent = t(playing ? 'stopScale' : 'listenScale');
+    $('scaleListenBtn').setAttribute('aria-pressed', String(playing));
+  }
+  async function playFullScale() {
+    if ($('scaleListenBtn').getAttribute('aria-pressed') === 'true') {
+      scalePlaybackToken++;
+      if (activeToneSource) { try { activeToneSource.stop(); } catch {} activeToneSource = null; }
+      setScaleButton(false);
+      $('scaleStatus').textContent = '';
+      return;
+    }
+    const token = ++scalePlaybackToken;
+    setScaleButton(true);
+    const noteDuration = 3.5;
+    for (let i = 0; i < SCALE_ORDER.length; i++) {
+      if (token !== scalePlaybackToken) return;
+      const note = SCALE_ORDER[i];
+      $('scaleStatus').textContent = t('scaleNowPlaying').replace('{note}', noteLabel(note)).replace('{number}', i + 1);
+      playTone(noteFrequency(note), noteDuration);
+      await new Promise(resolve => setTimeout(resolve, noteDuration * 1000));
+    }
+    if (token === scalePlaybackToken) {
+      setScaleButton(false);
+      $('scaleStatus').textContent = t('scaleFinished');
+    }
   }
   function setAnswers(enabled) { document.querySelectorAll('.answer').forEach(button => { button.disabled = !enabled; }); }
   function totalRounds() { return mode === 'test' && $('testScope').value === 'scale' ? 9 : 10; }
@@ -241,16 +274,22 @@
   }));
   $('languageSelect').addEventListener('change', event => applyLanguage(event.target.value));
   $('lowAInput').value = lowAFrequency;
-  $('lowAInput').addEventListener('change', () => {
+  function updateLowA(finalize = false) {
     const value = Number($('lowAInput').value);
-    lowAFrequency = Number.isFinite(value) && value >= 400 && value <= 520 ? value : 480;
-    $('lowAInput').value = lowAFrequency;
-    try { localStorage.setItem('chanterLowA', String(lowAFrequency)); } catch {}
-    cancelCurrentExercise();
-  });
+    if (Number.isFinite(value) && value >= 400 && value <= 520) {
+      if (value !== lowAFrequency) {
+        lowAFrequency = value;
+        try { localStorage.setItem('chanterLowA', String(lowAFrequency)); } catch {}
+        cancelCurrentExercise();
+      }
+    } else if (finalize) $('lowAInput').value = lowAFrequency;
+  }
+  $('lowAInput').addEventListener('input', () => updateLowA());
+  $('lowAInput').addEventListener('change', () => updateLowA(true));
   $('noteSelect').addEventListener('change', cancelCurrentExercise);
   $('testScope').addEventListener('change', cancelCurrentExercise);
   $('referenceBtn').addEventListener('click', () => playTone(noteFrequency(current?.note || $('noteSelect').value)));
+  $('scaleListenBtn').addEventListener('click', playFullScale);
   $('newBtn').addEventListener('click', () => mode === 'test' ? startTest() : prepare());
   $('playBtn').addEventListener('click', () => { if (current) playTone(current.freq); });
   document.querySelectorAll('.answer').forEach(button => button.addEventListener('click', () => answer(button.dataset.answer)));

@@ -10,9 +10,10 @@ La aplicación conserva la lógica del Python original:
 - Selector de idioma: English, Français y Español.
 - Frecuencia de Low A ajustable; las otras ocho notas se derivan automáticamente.
 - Prueba de una sola nota o recorrido aleatorio de las nueve notas, una vez cada una.
+- Botón para escuchar la escala ascendente completa, con 3,5 segundos por nota y opción de detenerla.
 
 Para instalarla como PWA en Chrome/Android, los archivos deben estar en una dirección HTTPS. Al instalarla, el service worker guarda los archivos de la aplicación para usarla sin conexión. La función de audio genera el tono en el propio dispositivo y utiliza la salida de audio que tenga seleccionada (altavoz o auriculares).
 
-Para el perfil Highland se usan estas proporciones respecto a Low A: Low G 7/8, Low A 1/1, B 9/8, C 5/4, D 4/3, E 3/2, F 5/3, High G 7/4 y High A 2/1. Por ejemplo, con Low A a 478 Hz, High A queda en 956 Hz. Las afinaciones de D y G pueden variar entre tradiciones de Highland; este proyecto usa el perfil armónico/justo indicado.
+Para el perfil armónico Highland se usan estas proporciones respecto a Low A: Low G 7/8, Low A 1/1, B 9/8, C 5/4, D 4/3, E 3/2, F 5/3, High G 7/4 y High A 2/1. El botón de escala reproduce las nueve notas en orden ascendente durante 3,5 segundos cada una. Por ejemplo, con Low A a 478 Hz, High A queda en 956 Hz. La fuente muestra otras opciones para D y G (incluidas las afinaciones MacNeill); las frecuencias exactas dependen de la tradición y del perfil elegido. Referencia: https://publish.uwo.ca/~emacphe3/pipes/acoustics/pipescale.html
 
 La carpeta contiene también codigo_original.py como referencia. Ese archivo no se publica en GitHub. Las estadísticas se guardan por separado en cada dispositivo y no se sincronizan entre Windows y el teléfono. Puedes compartir el enlace de la app; cada persona tendrá sus propias estadísticas locales.
